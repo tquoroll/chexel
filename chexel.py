@@ -19,6 +19,7 @@ def source_companies():
         for cell in col:
             companies_list.append(cell.value)
 
+    companies_list = set(companies_list)
     return companies_list
 
 # Get the list of companies and search each of them in turn
